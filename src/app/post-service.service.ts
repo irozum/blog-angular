@@ -31,7 +31,7 @@ export class PostServiceService {
   }
 
   getAllPosts(): Observable<BlogPost[]> {
-    return this.http.get<BlogPost[]>(`https://posts--api.herokuapp.com/api/posts?page=1&perPage=Number.MAX_SAFE_INTEGER`)
+    return this.http.get<BlogPost[]>(`https://posts--api.herokuapp.com/api/posts?page=1&perPage=${Number.MAX_SAFE_INTEGER}`)
   }
 
   newPost(data: BlogPost): Observable<any> {
