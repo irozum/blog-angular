@@ -6,7 +6,7 @@
     </div>
     <h1>{{ post.title }}<a routerLink="#"><i class="fa fa-bookmark-o"></i></a></h1>
     <div class="post-footer d-flex align-items-center flex-column flex-sm-row"><a routerLink="#" class="author d-flex align-items-center flex-wrap">
-        <div class="avatar"><img src="/assets/img/user.svg" alt="..." class="img-fluid"></div>
+        <div class="avatar"><img src="assets/img/user.svg" alt="..." class="img-fluid"></div>
         <div class="title"><span>{{ post.postedBy }}</span></div></a>
       <div class="d-flex align-items-center flex-wrap">       
         <div class="date"><i class="icon-clock"></i> {{ post.postDate | date:'mediumDate' }}</div>
@@ -23,7 +23,7 @@
       <div class="comment" *ngFor="let comment of post.comments">
         <div class="comment-header d-flex justify-content-between">
           <div class="user d-flex align-items-center">
-            <div class="image"><img src="/assets/img/user.svg" alt="..." class="img-fluid rounded-circle"></div>
+            <div class="image"><img src="assets/img/user.svg" alt="..." class="img-fluid rounded-circle"></div>
             <div class="title"><strong>{{ comment.author }}</strong><span class="date">{{ comment.date | date:'mediumDate' }}</span></div>
           </div>
         </div>
